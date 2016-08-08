@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="utf-8" />
+<link rel='stylesheet' media="screen" type='text/css' href='style.css' />
+<script type="text/javascript" src="jquery.min.js">// jquery file </script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("img").click(function(){
+				 $(this).animate({height:150},"slow");
+   				 $(this).animate({width:150},"slow");
+				
+			});
+			$("#link img").hover(function(){
+			this.src = this.src.replace("_off","_on");
+			},function(){
+			this.src = this.src.replace("_on","_off");
+			});
+		});
+</script>
+</head>
+
+<body>
+	<div id="header" style = font: 100px; align="center">
+	<h2> <br/>welcome to my personal website <br/>
+	My name is Hyung-Jin Kim</h2>
+	</div>
+	
+    <div id="navigation">
+			<ul>
+            	<li><a href="main.php">Home</a></li>
+                <li><a href="intro.php">Intro</a></li>
+				<li><a href="resume.php">Resume</a></li>
+				<li><a href="academ.php">Project</a></li>
+				<li><a href="photo.php">Photo</a><li>
+			
+			</ul>
+	</div>    
+
+	
+
+	<div id="side"style= height:580px;>
+		<h2>Pictures</h2>
+		<form id="link" >
+		<img src= "images/usc_off.jpg" alt="usc" style = width:100px;>
+		<img src= "images/ralla_off.jpg" alt="Ralla" style = width:100px; >
+		<img src= "images/car_off.jpg" alt="car" style = width:100px; >
+		</form>
+	</div>
+
+
+
+
+	<div id="content" >
+		<h1>Discription of this web page</h1>
+		<p>
+			Hello this is my fist dynamic web page<br/>
+			<br/>
+			<form id="link" >
+			<img src= "images/me_off.jpg" alt="Me" style = width:400px; ><br/></form>
+			This is a picture of my self<br/>
+			<p>
+			The general infomation is in the "Intro" page<br/>
+			The resume and downloading resume is in "Resume" page,<br/>
+			Feel free to write comments in the comment box <br/>
+			The Academic page contains the accademic projects that I did in USC <br/>
+			and also feel free to write comments in the comment box <br/
+			The Photo page is the place where we can upload picture to this webpage.
+			</p>
+			One again thank you for visiting my webpage. 
+	</div>
+
+
+	<div id="footer">
+	
+		This page is made by Hyung-Jin Kim<br/>
+		&copy; Hyung-Jin Kim
+
+	</div>
+
+</body>
+</html>
